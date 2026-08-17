@@ -25,6 +25,108 @@ import Layout from '../layouts/Layout.astro';
 
     <hr class="border-gray-800 mb-16" />
 
+    <section class="mb-24">
+      <div class="mb-8">
+        <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-1">
+          <h2 class="text-4xl font-black tracking-tight">SGD</h2>
+          <span class="text-xs tracking-[0.3em] uppercase text-gray-500 border border-gray-700 px-2 py-1">
+            Coming soon
+          </span>
+        </div>
+        <p class="text-gray-500 text-sm tracking-wide uppercase">
+          VST3 / AU / Standalone &nbsp;·&nbsp; macOS &amp; Windows
+        </p>
+      </div>
+
+      <p class="text-gray-300 leading-relaxed mb-6">
+        SGD — Spatial Gesture Design — turns a sound file into a <em class="not-italic text-white">gesture</em>:
+        a sound together with its motion through a virtual room around the listener. You draw the path on the
+        room floor, lift it into three dimensions with an elevation curve, bend the timing with a motion curve,
+        and bind the result to a MIDI key. Pressing that key does not merely play the sound, it sends it
+        travelling — around you, overhead, past your ear.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed mb-10">
+        SGD does not pan. It binauralizes every gesture against a physical model of the room, so on headphones
+        the sound leaves your head, with distance, air, wall reflections and Doppler all following from the space
+        you built. The whole spatial computation runs offline in the background, so playback itself costs almost
+        nothing — and every gesture still keeps its own mixer strip with gain, three-band EQ and a send to the
+        shared room reverb.
+      </p>
+
+      <img src="/img/sgd-edit.png" alt="The SGD edit view: gesture list, trajectory and elevation editors, inspector, and the keyboard along the bottom."
+           class="w-full border border-gray-800 mb-12" />
+
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-6 mb-12">
+        <div>
+          <h3 class="font-medium mb-1">Play space like an instrument</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Every gesture lives on a MIDI key, so spatial sound design stops being an automation-lane chore and
+            becomes something you perform live, from your DAW or the standalone application.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium mb-1">Sound that leaves your head</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            True binaural rendering, with distance, air absorption and the reflections of your walls. Dial the
+            reflections deeper for dense, vivid spaces, and switch the Doppler shift of moving sources on or off
+            to taste.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium mb-1">Draw the motion, sculpt the time</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            The waveform is painted along the trajectory, so you see which part of the sample happens where. The
+            motion curve then lets the source rush, hesitate, freeze mid-air, or run the path backwards.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium mb-1">Stretch a sound wide open</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Stereo files get a width curve: the two channels spread apart and ride the path like wingtips,
+            opening from a point into a wide wash and closing again, drawn as one simple envelope.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium mb-1">Rooms are real, and they are yours</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Width, height and depth in metres, with a wall material of your choice. Resize the room or swap
+            concrete for wood and the reflections, the reverb and every gesture adapt automatically. Rooms save
+            as self-contained folders, samples included.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium mb-1">Heavy rendering, weightless workflow</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Nothing is ever rendered twice. Reopen a room and it is instantly ready; tweak a curve and only that
+            one gesture quietly re-renders while you keep working.
+          </p>
+        </div>
+      </div>
+
+      <figure class="mb-12">
+        <img src="/img/sgd-observe.png" alt="The SGD observe view: the room as a wireframe box, the listener at its centre, and a gesture's path traced in orange."
+             class="w-full border border-gray-800" />
+        <figcaption class="text-gray-500 text-sm mt-3">
+          Observe view — a listener at the centre of the room at true scale, every sounding gesture tracing its
+          path in its own colour, with a glowing sphere that swells and fades with the loudness of the sound.
+        </figcaption>
+      </figure>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="/manual/sgd/"
+           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
+          Manual
+        </a>
+        <a href="/manual/sgd/SGD-Manual.pdf"
+           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
+          Manual (PDF)
+        </a>
+      </div>
+    </section>
+
+    <hr class="border-gray-800 mb-16" />
+
     <section class="mb-20">
       <div class="mb-8">
         <h2 class="text-4xl font-black tracking-tight mb-1">curtis</h2>
