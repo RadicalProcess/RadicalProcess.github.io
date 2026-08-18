@@ -5,45 +5,37 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Radical Process">
 
   <!-- ── HEADER ──────────────────────────────────────────────────── -->
-  <header class="max-w-4xl mx-auto px-6 pt-20 pb-14 text-center">
-    <p class="text-xs tracking-[0.45em] uppercase text-gray-500 mb-4">Audio Plugins</p>
-    <h1 class="text-5xl sm:text-7xl font-black tracking-tighter uppercase mb-10 leading-none">
-      Radical<br/>Process
-    </h1>
-    <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-14">
-      Radical Process makes edgy, obsessively detailed audio plugins for artists who refuse to settle
-      for the generic, AI-generated sound flooding music today. Built for those who chase their own
-      signature tone down to the last decimal, our tools are unapologetically niche and
-      unapologetically deep. This is gear for people who care too much—and wouldn't have it any
-      other way.
+  <header class="max-w-4xl mx-auto px-6 pt-14 pb-4">
+    <p class="text-xs uppercase text-gray-500">
+      <span class="tracking-[0.45em]">Radical Process</span>
+      <span class="text-gray-600 tracking-[0.25em]">
+        &nbsp;—&nbsp; Unapologetically niche, unapologetically deep
+      </span>
     </p>
-
   </header>
 
-  <!-- ── PRODUCTS ───────────────────────────────────────────────── -->
-  <main class="max-w-4xl mx-auto px-6 py-20">
+  <!-- ── SGD ────────────────────────────────────────────────────── -->
+  <main class="max-w-4xl mx-auto px-6 pb-20">
 
-    <hr class="border-gray-800 mb-16" />
-
-    <section class="mb-24">
+    <section class="pt-10">
       <div class="mb-8">
         <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-1">
-          <h2 class="text-4xl font-black tracking-tight">SGD</h2>
+          <h1 class="text-5xl sm:text-6xl font-black tracking-tighter">SGD</h1>
           <span class="text-xs tracking-[0.3em] uppercase text-gray-500 border border-gray-700 px-2 py-1">
             Coming soon
           </span>
         </div>
         <p class="text-gray-500 text-sm tracking-wide uppercase">
-          VST3 / AU / Standalone &nbsp;·&nbsp; macOS &amp; Windows
+          Spatial Gesture Designer &nbsp;·&nbsp; VST3 / AU / Standalone &nbsp;·&nbsp; macOS
         </p>
       </div>
 
       <p class="text-gray-300 leading-relaxed mb-6">
-        SGD — Spatial Gesture Design — turns a sound file into a <em class="not-italic text-white">gesture</em>:
-        a sound together with its motion through a virtual room around the listener. You draw the path on the
-        room floor, lift it into three dimensions with an elevation curve, bend the timing with a motion curve,
-        and bind the result to a MIDI key. Pressing that key does not merely play the sound, it sends it
-        travelling — around you, overhead, past your ear.
+        SGD turns a sound file into a <em class="not-italic text-white">gesture</em>: a sound together with its
+        motion through a virtual room around the listener. You draw the path on the room floor, lift it into
+        three dimensions with an elevation curve, bend the timing with a motion curve, and bind the result to a
+        MIDI key. Pressing that key does not merely play the sound, it sends it travelling — around you,
+        overhead, past your ear.
       </p>
 
       <p class="text-gray-300 leading-relaxed mb-10">
@@ -54,104 +46,146 @@ import Layout from '../layouts/Layout.astro';
         shared room reverb.
       </p>
 
-      <img src="/img/sgd-edit.png" alt="The SGD edit view: gesture list, trajectory and elevation editors, inspector, and the keyboard along the bottom."
-           class="w-full border border-gray-800 mb-12" />
+      <figure class="mb-16">
+        <img src="/img/sgd-edit.png" alt="The SGD edit view: gesture list, trajectory and elevation editors, inspector, and the keyboard along the bottom."
+             class="w-full border border-gray-800" />
+        <figcaption class="text-gray-500 text-sm mt-3">
+          Edit view — the whole instrument on one screen: gestures on the left, the room floor in the middle,
+          the curve editor below it, and the keyboard they all play from along the bottom.
+        </figcaption>
+      </figure>
 
-      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-6 mb-12">
+      <!-- ── PITCHES ──────────────────────────────────────────────── -->
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-14 mb-16">
+
         <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-gesture.png" alt="The gesture list: each row shows a key dropdown, the gesture name, its sound file and length, and a thumbnail of its path."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
+          <h3 class="font-medium mb-1">A sound, a path, a key</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            That is a gesture, and the list keeps all three together: the sound file it plays, a thumbnail of the
+            path it flies, and the key it answers to. Pick a new key from the dropdown and the binding moves with
+            it — up to 128 gestures in a room, each with its own colour.
+          </p>
+        </div>
+
+        <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-key.png" alt="The keyboard strip: coloured dots on C4, D4, E4 and the black keys mark the gestures bound to each key."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
           <h3 class="font-medium mb-1">Play space like an instrument</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Every gesture lives on a MIDI key, so spatial sound design stops being an automation-lane chore and
-            becomes something you perform live, from your DAW or the standalone application.
+            Every gesture lives on a MIDI key, marked by its own colour on the keyboard. Spatial sound design
+            stops being an automation-lane chore and becomes something you perform live, from your DAW or the
+            standalone application.
           </p>
         </div>
+
         <div>
-          <h3 class="font-medium mb-1">Sound that leaves your head</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">
-            True binaural rendering, with distance, air absorption and the reflections of your walls. Dial the
-            reflections deeper for dense, vivid spaces, and switch the Doppler shift of moving sources on or off
-            to taste.
-          </p>
-        </div>
-        <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-trajectory.png" alt="The trajectory editor: a looping path drawn around the listener with the sample's waveform painted along it."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
           <h3 class="font-medium mb-1">Draw the motion, sculpt the time</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
             The waveform is painted along the trajectory, so you see which part of the sample happens where. The
             motion curve then lets the source rush, hesitate, freeze mid-air, or run the path backwards.
           </p>
         </div>
+
         <div>
-          <h3 class="font-medium mb-1">Stretch a sound wide open</h3>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-elevation.png" alt="The elevation editor: breakpoints above and below the listener's ear line define the height of the path."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
+          <h3 class="font-medium mb-1">Lift it off the floor, stretch it wide</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Stereo files get a width curve: the two channels spread apart and ride the path like wingtips,
-            opening from a point into a wide wash and closing again, drawn as one simple envelope.
+            One editor, three curves. Elevation lifts the path over your head or drops it to your feet; the
+            width curve spreads the two channels of a stereo file apart like wingtips, opening from a point into
+            a wide wash and closing again.
           </p>
         </div>
+
         <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-render.png" alt="The render panel: Direct plus first, second and third order reflections, a Doppler amount knob, and a background render progress bar."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
+          <h3 class="font-medium mb-1">Sound that leaves your head</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            True binaural rendering, with distance, air absorption and up to three orders of wall reflections.
+            Dial the reflections deeper for dense, vivid spaces, and set the Doppler shift of moving sources to
+            taste.
+          </p>
+        </div>
+
+        <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-room.png" alt="The room settings dialog: a wireframe room with the listener at its centre, size in metres, and wall material controls."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
           <h3 class="font-medium mb-1">Rooms are real, and they are yours</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Width, height and depth in metres, with a wall material of your choice. Resize the room or swap
-            concrete for wood and the reflections, the reverb and every gesture adapt automatically. Rooms save
-            as self-contained folders, samples included.
+            Width, height and depth in metres, with a wall material of your choice — absorption, damping,
+            scatter and RT60. Resize the room or swap concrete for carpet and the reflections, the reverb and
+            every gesture adapt automatically. Rooms save as self-contained folders, samples included.
           </p>
         </div>
+
         <div>
-          <h3 class="font-medium mb-1">Heavy rendering, weightless workflow</h3>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-mix.png" alt="The per-gesture mix strip: gain, low, mid and high EQ knobs, and a send to the shared room reverb."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
+          <h3 class="font-medium mb-1">Every gesture keeps its own strip</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Nothing is ever rendered twice. Reopen a room and it is instantly ready; tweak a curve and only that
-            one gesture quietly re-renders while you keep working.
+            Gain, three-band EQ and a send to the shared room reverb, per gesture. Nothing is ever rendered
+            twice: reopen a room and it is instantly ready; tweak a curve and only that one gesture quietly
+            re-renders while you keep working.
           </p>
         </div>
+
+        <div>
+          <div class="border border-gray-800 bg-black h-52 flex items-center justify-center p-3 mb-4">
+            <img src="/img/sgd-trim.png" alt="The trim dialog: a stereo waveform with a highlighted region and fade handles at each edge."
+                 class="max-h-full max-w-full object-contain" />
+          </div>
+          <h3 class="font-medium mb-1">Only the part that flies</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Drag over the waveform to keep the part of the sound you want, pull the triangles for fades, and
+            slide the whole region along the file. The gesture and its painted trajectory redraw around whatever
+            you keep.
+          </p>
+        </div>
+
       </div>
 
-      <figure class="mb-12">
-        <img src="/img/sgd-observe.png" alt="The SGD observe view: the room as a wireframe box, the listener at its centre, and a gesture's path traced in orange."
+      <figure>
+        <img src="/img/sgd-observe.png" alt="The SGD observe view: the room as a wireframe box seen from outside, with four named gestures tracing coloured paths around the listener."
              class="w-full border border-gray-800" />
         <figcaption class="text-gray-500 text-sm mt-3">
-          Observe view — a listener at the centre of the room at true scale, every sounding gesture tracing its
-          path in its own colour, with a glowing sphere that swells and fades with the loudness of the sound.
+          Observe view — the room from outside at true scale, the listener at its centre, every sounding gesture
+          named and tracing its path in its own colour, each with a glowing sphere that swells and fades with the
+          loudness of the sound.
         </figcaption>
       </figure>
-
-      <div class="flex flex-wrap gap-3">
-        <a href="/manual/sgd/"
-           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
-          Manual
-        </a>
-        <a href="/manual/sgd/SGD-Manual.pdf"
-           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
-          Manual (PDF)
-        </a>
-      </div>
     </section>
 
-    <hr class="border-gray-800 mb-16" />
+    <hr class="border-gray-800 my-20" />
 
-    <section class="mb-20">
-      <div class="mb-8">
-        <h2 class="text-4xl font-black tracking-tight mb-1">curtis</h2>
-        <p class="text-gray-500 text-sm tracking-wide uppercase">VST3 / AU &nbsp;·&nbsp; Intel Mac &amp; Windows</p>
-      </div>
-
-      <div class="flex flex-wrap gap-3 mb-10">
-        <a href="https://github.com/RadicalProcess/curtis/releases/tag/v1.0.0"
-           class="px-5 py-2 bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors">
-          Free Download
-        </a>
-        <a href="https://github.com/RadicalProcess/curtis"
-           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
-          Source Code
-        </a>
-        <a href="https://github.com/RadicalProcess/curtis/issues"
-           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
-          Bug Report
-        </a>
-        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-           class="px-5 py-2 border border-gray-600 text-gray-300 text-sm hover:border-white hover:text-white transition-colors">
-          License (GPL-3)
-        </a>
-      </div>
-
+    <!-- ── ABOUT ──────────────────────────────────────────────────── -->
+    <section>
+      <h2 class="text-sm font-semibold tracking-[0.25em] uppercase text-gray-400 mb-4">Radical Process</h2>
+      <p class="text-gray-300 leading-relaxed max-w-2xl">
+        Radical Process makes edgy, obsessively detailed audio plugins for artists who refuse to settle
+        for the generic, AI-generated sound flooding music today. Built for those who chase their own
+        signature tone down to the last decimal, our tools are unapologetically niche and
+        unapologetically deep. This is gear for people who care too much—and wouldn't have it any
+        other way.
+      </p>
     </section>
   </main>
 
@@ -160,4 +194,3 @@ import Layout from '../layouts/Layout.astro';
   </footer>
 
 </Layout>
-
